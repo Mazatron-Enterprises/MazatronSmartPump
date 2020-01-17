@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.mazatron.mazatronsmartpump.MainActivity"
+    android:background="@drawable/ic_background"
+    >
+
+    <ImageView
+        android:id="@+id/mazlogo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:src="@mipmap/ic_logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="SMART PUMP"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColorHighlight="@android:color/holo_blue_light"
+        android:textAllCaps="true"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/gsm_number"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/gsmnumber"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myeditbox"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:hint="+91"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:maxLength="10"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:background="@android:color/holo_blue_light"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:elevation="20dp"
+        android:onClick="save_number"
+        android:text="@string/save_button"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationZ="20dp" />
+
+</RelativeLayout>
